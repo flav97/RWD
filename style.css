@@ -1,0 +1,115 @@
+body, html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+
+/* Images   */
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed; /* This is setting up the Parallax effect */
+}
+
+
+.pimg1{
+    background-image: url(/media/section-1.jfif);
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url(/media/section-2.jfif);
+    min-height: 800px;
+}
+
+.pimg3{
+    background-image: url(/media/section-3.jfif);
+    min-height: 800px;
+}
+
+
+/* Sections */
+
+.section{
+text-align: center;
+padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.section-ldark{
+    background-color: #373f47;
+    color: #ddd;
+}
+
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-size: 37px;
+    font-family: 'Knewave', cursive;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+
+
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+
+    .ptext{
+        top: 25%
+    }
+
+}
+
+.container img{
+    height: 380px;
+    width: 600px;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    overflow: hidden;
+}
+
+.btn {
+    border-radius: 8px;
+    background-color: #373f47; 
+    color: white;
+    opacity: 0.6;
+    transition: 0.3;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: white;
+    color: #373f47;
+    opacity: 1;
+}
